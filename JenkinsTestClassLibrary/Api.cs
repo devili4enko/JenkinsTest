@@ -25,7 +25,7 @@ namespace JenkinsTestClassLibrary
 		public bool SaveLineToFile(string line)
 		{
 
-			File.AppendText("..\\Text\\SimpleText.txt");
+			File.WriteAllText(".\\Text\\SimpleText.txt", line);
 
 			return true;
 		}
