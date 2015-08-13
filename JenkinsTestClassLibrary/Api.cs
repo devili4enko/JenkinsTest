@@ -12,7 +12,12 @@ namespace JenkinsTestClassLibrary
 
 		public void SayHello(string name)
 		{
-			Console.WriteLine(Greeting, name);	
+			Console.WriteLine(MakeString(name));	
+		}
+
+		private string MakeString(string name)
+		{
+			return string.Format(Greeting, name);
 		}
 	}
 }
